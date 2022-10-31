@@ -1,0 +1,51 @@
+@import "./includes/styles";
+@import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+
+$primary: #42b983;
+$text-color: #2f3138;
+$text-muted: #dddde5;
+$background: #ffffff;
+$background-card: #f4f4f8;
+$border-radius-img: 35px;
+
+
+body {
+  color: $text-color;
+  background: $background;
+  font-family: 'Inter', sans-serif;
+
+  .text-muted {
+    color: $text-muted !important;
+  }
+
+  .card {
+    background-color: $background-card;
+    border: none;
+    padding: .7rem 1.5rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.main-container {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+div.sepatron {
+  margin: 20px 0;
+}
+
+@import './components/recipe';
+@import './components/search';
+@import './components/top-bar';
+@import './components/bottom-bar';
